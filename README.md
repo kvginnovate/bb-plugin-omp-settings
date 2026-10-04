@@ -164,14 +164,14 @@ One real example each (values observed live on a Windows host):
 ```
 bb omp-settings info
 omp 18.6.0
-config: C:\Users\Chokkar\.omp\agent
+config: ~/.omp/agent
 ```
 
 ```
 bb omp-settings list --filter theme
 key        type  value       description
 …
-3 setting(s). Config: C:\Users\Chokkar\.omp\agent
+3 setting(s). Config: ~/.omp/agent
 ```
 
 ```
