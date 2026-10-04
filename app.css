@@ -1,0 +1,15 @@
+/* bb-plugin-omp-settings — page stylesheet.
+ *
+ * Intentionally almost empty, and the emptiness is the point. The page is
+ * built entirely from Tailwind utility classes plus the shadcn-style semantic
+ * tokens `--background`, `--foreground`, `--muted`, `--border`, `--primary`,
+ * and `--destructive`. Those tokens come from the bb HOST: every other
+ * installed plugin frontend consumes `var(--background)` without defining it,
+ * so defining them here would replace the user's real theme with an
+ * approximation.
+ *
+ * The import exists so `bb plugin build` emits `dist/app.css` with the
+ * Tailwind layer that makes those utility classes mean anything; the builder
+ * supplies Tailwind itself, so nothing here names the package. Dropping this
+ * file would leave every class in app.tsx unstyled.
+ */

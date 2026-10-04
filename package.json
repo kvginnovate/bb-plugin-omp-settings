@@ -1,0 +1,30 @@
+{
+  "name": "bb-plugin-omp-settings",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.45",
+    "bbPluginSdk": ">=0.6.15"
+  },
+  "bb": {
+    "name": "Omp Settings",
+    "description": "Read and write every omp CLI setting from bb — a full settings page, a CLI, and an agent tool.",
+    "branding": {
+      "icon": "Sliders"
+    },
+    "server": "./server.ts",
+    "host": "./host.ts",
+    "app": "./app.tsx",
+    "skills": [
+      "skills/omp-settings"
+    ]
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.15",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
